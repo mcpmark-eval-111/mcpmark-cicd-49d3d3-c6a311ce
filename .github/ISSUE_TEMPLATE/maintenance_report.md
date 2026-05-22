@@ -1,39 +1,42 @@
 ---
 name: Maintenance task
-about: Track housekeeping, refactors, dependency upgrades, or chores
-title: "Maintenance: <short summary>"
-labels: ["maintenance", "needs-triage"]
-assignees: []
+about: Report a maintenance, refactor, or housekeeping task
+title: 'Maintenance: <short description>'
+labels: maintenance, needs-triage
+assignees: ''
 ---
 
-## Maintenance Guidelines
+## Maintenance task
 
-Maintenance items keep the project healthy. Please describe the scope clearly
-so reviewers can prioritize and schedule the work.
-
-## Scope
-
-What needs to be cleaned up, refactored, or upgraded?
-
-## Affected Areas
-
-- Modules / files:
-- Dependencies:
-- Tooling / CI:
+A short, clear description of the maintenance work to be done
+(e.g. dependency upgrade, refactor, cleanup, infra change).
 
 ## Motivation
 
-Why is this maintenance important now? (e.g. tech debt, security, performance)
+Why is this maintenance work needed? What is the cost of not doing it?
 
-## Risk and Rollback
+## Scope of work
 
-- Risk level: low / medium / high
-- Mitigation steps:
-- Rollback plan:
+- [ ] Item 1
+- [ ] Item 2
+- [ ] Item 3
 
-## Checklist
+## Impact / Risk assessment
 
-- [ ] Update relevant documentation
-- [ ] Update or add tests
-- [ ] Verify CI passes
-- [ ] Confirm no breaking changes for consumers
+- Areas of code or infrastructure affected:
+- User-visible impact (if any):
+- Risk level (low / medium / high):
+
+## Rollback / Revert plan
+
+How will we recover if this maintenance change causes a problem?
+
+## Priority
+
+Add a priority hint in the title or body when relevant — for example:
+`critical`, `urgent`, `production`, `outage`, `important`, `high`, `blocking`,
+`medium`, `normal`, `low`, `nice-to-have`, `minor`.
+
+## Additional context
+
+Links, related issues, monitoring dashboards, etc.

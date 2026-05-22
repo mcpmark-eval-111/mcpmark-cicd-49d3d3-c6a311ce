@@ -1,41 +1,39 @@
 ---
 name: Feature request
-about: Propose a new feature or large epic
-title: "Epic: <feature name>"
-labels: ["epic", "needs-triage"]
-assignees: []
+about: Propose a new feature or epic
+title: 'Epic: <short description>'
+labels: epic, enhancement, needs-triage
+assignees: ''
 ---
 
-## Feature Request Process
+## Summary
 
-Large features go through the following stages, each tracked as a sub-task:
+A short, clear description of the proposed feature or epic.
 
-1. Requirements Analysis
-2. Design and Architecture
-3. Implementation
-4. Testing and Documentation
+## Motivation / Problem
 
-When this issue is opened, sub-issues will be created automatically and linked
-back here as an "Epic Tasks" checklist.
+What problem does this solve? Why should we build it?
 
-## Problem Statement
+## Proposed solution
 
-What problem does this feature solve? Who is impacted?
+Describe the solution you'd like, including UX, APIs, or architecture sketches.
 
-## Proposed Solution
+## Alternatives considered
 
-Describe the proposed feature or change.
+Other options you've thought about and why you didn't pick them.
 
-## Alternatives Considered
-
-What other approaches did you consider, and why were they rejected?
-
-## Acceptance Criteria
+## Acceptance criteria
 
 - [ ] Requirement 1
 - [ ] Requirement 2
 - [ ] Requirement 3
 
-## Additional Context
+## Priority
 
-Designs, mockups, references, related issues, etc.
+Add a priority hint in the title or body when relevant — for example:
+`critical`, `urgent`, `important`, `high`, `blocking`,
+`medium`, `normal`, `low`, `nice-to-have`, `minor`.
+
+## Additional context
+
+Mockups, links, prior art, or any other context.

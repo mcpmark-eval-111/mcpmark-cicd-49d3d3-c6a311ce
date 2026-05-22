@@ -1,43 +1,43 @@
 ---
 name: Bug report
-about: Report something that isn't working as expected
-title: "Bug: <short summary>"
-labels: ["bug", "needs-triage"]
-assignees: []
+about: Report a problem to help us improve
+title: 'Bug: <short description>'
+labels: bug, needs-triage
+assignees: ''
 ---
 
-## Bug Report Guidelines
+## Bug description
 
-Thanks for taking the time to file a bug. Please fill out the sections below
-so we can reproduce and fix the issue quickly.
+A clear and concise description of what the bug is.
 
-## Description
-
-A clear and concise description of the bug.
-
-## Steps to Reproduce
+## Steps to reproduce
 
 1. Go to '...'
 2. Click on '...'
 3. Scroll down to '...'
 4. See error
 
-## Expected Behavior
+## Expected behavior
 
-What did you expect to happen?
+What you expected to happen.
 
-## Actual Behavior
+## Actual behavior
 
-What actually happened? Include any error messages or stack traces.
+What actually happens (include error messages, stack traces, screenshots).
 
 ## Environment
 
 - OS:
 - Node.js version:
-- npm/yarn/pnpm version:
 - Browser (if applicable):
-- App version / commit SHA:
+- App version / commit:
 
-## Additional Context
+## Priority
 
-Logs, screenshots, or anything else that might help.
+Add a priority hint in the title or body when relevant — for example:
+`critical`, `urgent`, `production`, `outage`, `important`, `high`, `blocking`,
+`medium`, `normal`, `low`, `nice-to-have`, `minor`.
+
+## Additional context
+
+Add any other context, logs, or screenshots about the problem here.
