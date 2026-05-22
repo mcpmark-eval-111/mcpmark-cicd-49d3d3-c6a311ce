@@ -1,42 +1,44 @@
 ---
 name: Maintenance task
-about: Report a maintenance, refactor, or housekeeping task
-title: 'Maintenance: <short description>'
-labels: maintenance, needs-triage
+about: Track a maintenance, refactor, dependency upgrade, or housekeeping task
+title: 'Maintenance: <short summary of the task>'
+labels: ['maintenance', 'needs-triage']
 assignees: ''
 ---
 
-## Maintenance task
+## Maintenance Task
 
-A short, clear description of the maintenance work to be done
-(e.g. dependency upgrade, refactor, cleanup, infra change).
+Use this template for housekeeping work — refactors, dependency upgrades,
+test infrastructure, tooling, or tech-debt cleanup. The Issue Management
+Automation workflow will detect "maintenance" in the title and apply the
+`maintenance` label automatically.
 
-## Motivation
+### Motivation
 
-Why is this maintenance work needed? What is the cost of not doing it?
+Why is this work needed? (e.g. tech debt, deprecated dependency, security
+patch, performance regression, developer-experience improvement.)
 
-## Scope of work
+### Scope
 
-- [ ] Item 1
-- [ ] Item 2
-- [ ] Item 3
+What exactly will change? List the files, modules, or systems involved.
 
-## Impact / Risk assessment
+### Risks / breaking changes
 
-- Areas of code or infrastructure affected:
-- User-visible impact (if any):
-- Risk level (low / medium / high):
+- [ ] No breaking changes expected
+- [ ] May require a coordinated release
+- [ ] Changes public API / configuration / behaviour
 
-## Rollback / Revert plan
+### Validation plan
 
-How will we recover if this maintenance change causes a problem?
+How will we verify this maintenance task didn't regress anything?
+(unit tests, integration tests, manual smoke test, CI lint, …)
 
-## Priority
+### Priority hints (optional)
 
-Add a priority hint in the title or body when relevant — for example:
-`critical`, `urgent`, `production`, `outage`, `important`, `high`, `blocking`,
-`medium`, `normal`, `low`, `nice-to-have`, `minor`.
+Use **low**, **minor**, or **nice-to-have** for `priority-low`. Use
+**important**, **high**, or **blocking** for `priority-high`. Otherwise the
+automation will default to `priority-medium`.
 
-## Additional context
+### Additional context
 
-Links, related issues, monitoring dashboards, etc.
+Links to upstream issues, release notes, advisories, or related PRs.

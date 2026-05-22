@@ -1,39 +1,47 @@
 ---
-name: Feature request
-about: Propose a new feature or epic
-title: 'Epic: <short description>'
-labels: epic, enhancement, needs-triage
+name: Feature request (Epic)
+about: Propose a large feature that should be tracked as an epic
+title: 'Epic: <short summary of the feature>'
+labels: ['epic', 'enhancement', 'needs-triage']
 assignees: ''
 ---
 
-## Summary
+## Feature Request / Epic
 
-A short, clear description of the proposed feature or epic.
+Use this template for **large features** that should be broken down into
+multiple sub-tasks. The Issue Management Automation workflow will detect
+"Epic" in the title and automatically create the following sub-issues:
 
-## Motivation / Problem
+1. Requirements Analysis
+2. Design and Architecture
+3. Implementation
+4. Testing and Documentation
 
-What problem does this solve? Why should we build it?
+### Problem statement
 
-## Proposed solution
+What problem are we solving? Who is affected? What's the user-facing impact?
 
-Describe the solution you'd like, including UX, APIs, or architecture sketches.
+### Proposed solution
 
-## Alternatives considered
+A high-level description of the change. Diagrams, wireframes or links to
+design docs are welcome.
 
-Other options you've thought about and why you didn't pick them.
+### Acceptance criteria
 
-## Acceptance criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
 
-- [ ] Requirement 1
-- [ ] Requirement 2
-- [ ] Requirement 3
+### Out of scope
 
-## Priority
+What is explicitly **not** part of this epic.
 
-Add a priority hint in the title or body when relevant — for example:
-`critical`, `urgent`, `important`, `high`, `blocking`,
-`medium`, `normal`, `low`, `nice-to-have`, `minor`.
+### Priority hints (optional)
 
-## Additional context
+Mark this issue as **high**, **important**, or **blocking** for `priority-high`,
+or **critical**/**urgent**/**production** for `priority-critical`. Otherwise the
+automation will default to `priority-medium`.
 
-Mockups, links, prior art, or any other context.
+### Additional context
+
+Links to related issues, PRs, RFCs, customer reports or design documents.

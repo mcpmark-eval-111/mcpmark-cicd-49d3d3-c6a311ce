@@ -1,43 +1,51 @@
 ---
 name: Bug report
-about: Report a problem to help us improve
-title: 'Bug: <short description>'
-labels: bug, needs-triage
+about: Report something that isn't working
+title: 'Bug: <short summary of the bug>'
+labels: ['bug', 'needs-triage']
 assignees: ''
 ---
 
-## Bug description
+## Bug Report
+
+Thanks for taking the time to report a bug! Please fill in the sections below.
+The Issue Management Automation workflow will use the keywords in your title
+and description to assign category, priority and triage labels automatically.
+
+### Describe the bug
 
 A clear and concise description of what the bug is.
 
-## Steps to reproduce
+### Steps to reproduce
 
 1. Go to '...'
 2. Click on '...'
 3. Scroll down to '...'
 4. See error
 
-## Expected behavior
+### Expected behaviour
 
-What you expected to happen.
+What did you expect to happen?
 
-## Actual behavior
+### Actual behaviour
 
-What actually happens (include error messages, stack traces, screenshots).
+What actually happened? Please include error messages, stack traces, or screenshots.
 
-## Environment
+### Environment
 
-- OS:
-- Node.js version:
+- OS: <e.g. macOS 14.4>
+- Node.js version: <output of `node -v`>
+- npm/yarn/pnpm version:
 - Browser (if applicable):
-- App version / commit:
+- Project version / commit SHA:
 
-## Priority
+### Severity hints (optional)
 
-Add a priority hint in the title or body when relevant — for example:
-`critical`, `urgent`, `production`, `outage`, `important`, `high`, `blocking`,
-`medium`, `normal`, `low`, `nice-to-have`, `minor`.
+If this is a **critical**, **urgent**, **production** outage, please say so here so the
+automation can flag it as `priority-critical`. Use words like **important**, **high**, or
+**blocking** for `priority-high`. Use **low**, **minor**, or **nice-to-have** for `priority-low`.
 
-## Additional context
+### Additional context
 
-Add any other context, logs, or screenshots about the problem here.
+Anything else that might help us reproduce or understand the problem (logs,
+related issues, recent changes, …).
